@@ -4,8 +4,10 @@
 
 :root {
   /* Custom variables */
+  --primary-background-color: #333;
   --secondary-background-color: #242424;
   --secondary-color: #33ebe2;
+  --neutral-color: rgba(255, 255, 255, 0.87);
   --column-gap: 2rem;
   --border-radius: 0.5rem;
   --sm-padding: 0.5rem;
@@ -20,8 +22,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #333;
+  color: var(--neutral-color);
+  background-color: var(--primary-background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -51,11 +53,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border-color: var(--secondary-background-color);
 }
 
 input {
@@ -65,8 +63,7 @@ input {
   font-size: var(--input-font-size);
   font-weight: var(--input-font-weight);
   font-family: inherit;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: var(--neutral-color);
   cursor: pointer;
-  transition: border-color 0.25s;
   width: 100%;
 }
