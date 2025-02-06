@@ -1,0 +1,16 @@
+.root {
+  background-color: #242424;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 560px) {
+  .root {
+    flex-direction: column;
+    & h1 {
+      margin-bottom: 1rem;
+    }
+  }
+}
