@@ -13,7 +13,7 @@ This is a simple todo app, nothing special...
 
 ## How to run
 
-git clone https://github.com/paulblackmore/simple-todo-app.git
-cd my-react-app
-npm install
-npm run dev
+- git clone https://github.com/paulblackmore/simple-todo-app.git
+- cd my-react-app
+- npm install
+- npm run dev
