@@ -1,6 +1,6 @@
 .root {
   background-color: var(--secondary-background-color);
-  padding: var(--sm-padding);
+  padding: var(--md-padding);
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: var(--lg-margin);
