@@ -1,0 +1,14 @@
+.root {
+  background-color: var(--secondary-background-color);
+  padding: var(--sm-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: var(--lg-margin);
+  gap: var(--column-gap);
+}
+
+@media (max-width: 990px) {
+  .root {
+    grid-template-columns: auto;
+  }
+}

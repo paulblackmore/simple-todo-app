@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--secondary-color);
+  padding: var(--sm-padding);
+  & input {
+    width: auto;
+  }
+}
