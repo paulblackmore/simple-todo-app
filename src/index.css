@@ -6,6 +6,10 @@
   --border-radius: 0.5rem;
   --sm-padding: 0.5rem;
   --lg-margin: 2rem;
+  --input-padding: 0.6em 1.2em;
+  --input-border: 1px solid transparent;
+  --input-font-size: 1em;
+  --input-font-weight: 500;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -36,10 +40,10 @@ h1 {
 
 button {
   border-radius: var(--border-radius);
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border: var(--input-border);
+  padding: var(--input-padding);
+  font-size: var(--input-font-size);
+  font-weight: var(--input-font-weight);
   font-family: inherit;
   background-color: var(--secondary-color);
   cursor: pointer;
@@ -54,11 +58,11 @@ button:focus-visible {
 }
 
 input {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border-radius: var(--border-radius);
+  border: var(--input-border);
+  padding: var(--input-padding);
+  font-size: var(--input-font-size);
+  font-weight: var(--input-font-weight);
   font-family: inherit;
   background-color: rgba(255, 255, 255, 0.87);
   cursor: pointer;
