@@ -1,0 +1,13 @@
+.root {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  row-gap: 1rem;
+  column-gap: 4rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 560px) {
+  .root {
+    grid-template-columns: 1fr;
+  }
+}
