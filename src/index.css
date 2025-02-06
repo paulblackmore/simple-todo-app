@@ -1,4 +1,12 @@
 :root {
+  /* Custom variables */
+  --secondary-background-color: #242424;
+  --secondary-color: #33ebe2;
+  --column-gap: 2rem;
+  --border-radius: 0.5rem;
+  --sm-padding: 0.5rem;
+  --lg-margin: 2rem;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -27,13 +35,13 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #33ebe2;
+  background-color: var(--secondary-color);
   cursor: pointer;
   transition: border-color 0.25s;
 }
