@@ -3,7 +3,8 @@
   grid-template-columns: 2fr auto;
   row-gap: 1rem;
   column-gap: var(--column-gap);
-  margin-top: 1rem;
+  margin-top: var(--lg-margin);
+  margin-bottom: var(--lg-margin);
 }
 
 @media (max-width: 560px) {

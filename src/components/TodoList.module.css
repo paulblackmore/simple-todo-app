@@ -3,8 +3,16 @@
   padding: var(--md-padding);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: var(--lg-margin);
   gap: var(--column-gap);
+}
+
+.fallback-layout {
+  height: 20rem;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 990px) {
