@@ -7,9 +7,9 @@ type Props = {
 };
 export const TodoItem = ({ todo }: Props) => {
   return (
-    <div className={styles.root} data-selected={todo.done}>
+    <div className={styles.root} data-completed={todo.done}>
       <span>{todo.value}</span>
-      <StyledCheckbox done={todo.done} />
+      <StyledCheckbox todo={todo} />
     </div>
   );
 };

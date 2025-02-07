@@ -9,7 +9,7 @@
   & input {
     width: auto;
   }
-  &[data-selected='false'] {
+  &[data-completed='true'] {
     border: none;
     text-decoration: line-through;
     opacity: 0.5;
