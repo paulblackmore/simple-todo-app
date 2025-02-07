@@ -7,6 +7,11 @@
   margin-bottom: var(--lg-margin);
 }
 
+.error {
+  color: red;
+  margin-top: 0;
+}
+
 @media (max-width: 560px) {
   .root {
     grid-template-columns: 1fr;
