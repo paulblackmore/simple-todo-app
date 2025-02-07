@@ -1,7 +1,21 @@
+import { useMemo } from 'react';
+import { useFetchTodos } from '../hooks/useFetchTodos';
+import { Todo } from '../types';
+
 export const TodoCount = () => {
+  const { data } = useFetchTodos();
+
+  const todoDoneCount = useMemo(() => {
+    return data ? data.filter((todo: Todo) => todo.done).length : 0;
+  }, [data]);
+
+  const todoNotDoneCount = useMemo(() => {
+    return data ? data.filter((todo: Todo) => !todo.done).length : 0;
+  }, [data]);
+
   return (
     <div>
-      <span>{`Completed ${0} of ${0}`}</span>
+      <span>{`Completed ${todoDoneCount} of ${todoNotDoneCount}`}</span>
     </div>
   );
 };
