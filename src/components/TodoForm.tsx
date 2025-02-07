@@ -37,6 +37,7 @@ export const TodoForm = () => {
 
     reset();
   };
+
   return (
     <>
       <form className={styles.root} onSubmit={handleSubmit(onSubmit)}>
