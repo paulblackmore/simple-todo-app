@@ -1,9 +1,13 @@
 import styles from './StyledCheckbox.module.css';
 
-export const StyledCheckbox = () => {
+type Props = {
+  done: boolean;
+};
+
+export const StyledCheckbox = ({ done }: Props) => {
   return (
     <label className={styles.root}>
-      <input type='checkbox' />
+      <input type='checkbox' defaultChecked={done} />
       <span className={styles.checkmark}></span>
     </label>
   );

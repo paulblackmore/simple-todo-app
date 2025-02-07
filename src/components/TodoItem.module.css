@@ -11,8 +11,6 @@
   }
   &[data-selected='false'] {
     border: none;
-  }
-  &:first-child[data-selected='false'] {
     text-decoration: line-through;
     opacity: 0.5;
     font-style: italic;
