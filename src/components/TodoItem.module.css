@@ -4,7 +4,7 @@
   align-items: center;
   border-radius: var(--border-radius);
   border: solid 1px var(--secondary-color);
-  padding: var(--sm-padding);
+  padding: var(--sm-spacing);
   opacity: 1;
   & input {
     width: auto;

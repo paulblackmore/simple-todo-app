@@ -11,9 +11,9 @@
   --error-color: #ff0000;
   --column-gap: 2rem;
   --border-radius: 0.5rem;
-  --sm-padding: 0.5rem;
-  --md-padding: 1rem;
-  --lg-margin: 2rem;
+  --sm-spacing: 0.5rem;
+  --md-spacing: 1rem;
+  --lg-spacing: 2rem;
   --input-padding: 0.6em 1.2em;
   --input-border: 1px solid transparent;
   --input-font-size: 1em;

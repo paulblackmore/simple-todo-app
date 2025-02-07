@@ -1,6 +1,6 @@
 .root {
   background-color: var(--secondary-background-color);
-  padding: 1rem;
+  padding: var(--md-spacing);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,9 +9,9 @@
 @media (max-width: 560px) {
   .root {
     flex-direction: column;
-    padding-bottom: 2rem;
+    padding-bottom: var(--lg-spacing);
     & h1 {
-      margin-bottom: 1rem;
+      margin-bottom: var(--md-spacing);
     }
   }
 }
