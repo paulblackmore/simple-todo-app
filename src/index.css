@@ -67,3 +67,8 @@ input {
   cursor: pointer;
   width: 100%;
 }
+
+input[type='checkbox'] {
+  width: 25px;
+  height: 25px;
+}
