@@ -4,6 +4,8 @@ import { setupServer } from 'msw/node';
 import { http, HttpResponse } from 'msw';
 import { mockData, newTodo, updatedTodo } from './mockData';
 
+expect.extend(matchers);
+
 const handlers = [
   http.get(`${import.meta.env.VITE_API_URL}/todos`, () =>
     HttpResponse.json(mockData)
@@ -16,9 +18,7 @@ const handlers = [
   ),
 ];
 
-expect.extend(matchers);
-
-export const server = setupServer(...handlers);
+const server = setupServer(...handlers);
 
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
