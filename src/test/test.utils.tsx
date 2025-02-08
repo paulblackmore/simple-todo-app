@@ -5,7 +5,8 @@ import { mockData } from './mockData';
 const queryClient = new QueryClient();
 
 export const AllTheProviders = ({ children }: PropsWithChildren) => {
-  queryClient.setQueryData(['todos'], mockData); // Add mock data to queryClient
+  // Add mock data to queryClient
+  queryClient.setQueryData(['todos'], mockData);
   return (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );

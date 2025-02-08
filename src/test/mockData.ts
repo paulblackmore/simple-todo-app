@@ -18,3 +18,17 @@ export const mockData = [
     createdAt: 1650804402054,
   },
 ];
+
+export const newTodo = {
+  id: 'yRTKiDy0-s_9zrh0zAknsn',
+  value: 'Go to sleep',
+  done: false,
+  createdAt: 1650802513913,
+};
+
+export const updatedTodo = {
+  id: 'yRTKiDy0-s_9zrh0zAMaK',
+  value: 'Go to gym',
+  done: true,
+  createdAt: 1650802513913,
+};
