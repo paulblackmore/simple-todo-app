@@ -7,7 +7,11 @@ type Props = {
 };
 
 export const TodoItem = ({ todo }: Props) => (
-  <div className={styles.root} data-completed={todo.done}>
+  <div
+    data-testid='todo-item'
+    className={styles.root}
+    data-completed={todo.done}
+  >
     <span>{todo.value}</span>
     <StyledCheckbox todo={todo} />
   </div>
