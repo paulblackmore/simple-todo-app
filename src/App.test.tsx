@@ -18,7 +18,7 @@ describe('App component', () => {
         <App />
       </AllTheProviders>
     );
-    expect(screen.getByText('Completed 1 of 2')).toBeInTheDocument();
+    expect(screen.getByText('Completed 1 of 3')).toBeInTheDocument();
   });
 
   it('renders App without loading state', () => {
@@ -28,5 +28,14 @@ describe('App component', () => {
       </AllTheProviders>
     );
     expect(screen.queryByText('Loading...')).not.toBeInTheDocument();
+  });
+
+  it('renders App with loading state', () => {
+    render(
+      <AllTheProviders data={[]}>
+        <App />
+      </AllTheProviders>
+    );
+    expect(screen.queryByText('Nothing to do...')).toBeInTheDocument();
   });
 });
