@@ -17,9 +17,8 @@ describe('useAddTodo hook', () => {
     });
 
     result.current.mutate(newTodo);
-
     await waitFor(() => expect(result.current.isSuccess).toBe(true));
-    expect(result.current.data?.value).toBe('Go to sleep');
+    expect(result.current.data).toEqual(newTodo);
   });
 
   it('handles error on adding a new todo', async () => {
@@ -35,7 +34,6 @@ describe('useAddTodo hook', () => {
     vi.spyOn(global, 'fetch').mockRejectedValueOnce(new Error('Network error'));
 
     result.current.mutate(newTodo);
-
     await waitFor(() => expect(result.current.isError).toBe(true));
   });
 });
