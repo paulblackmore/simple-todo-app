@@ -9,13 +9,9 @@ export const TodoCount = () => {
     return data ? data.filter((todo: Todo) => todo.done).length : 0;
   }, [data]);
 
-  const todoNotDoneCount = useMemo(() => {
-    return data ? data.filter((todo: Todo) => !todo.done).length : 0;
-  }, [data]);
-
   return (
     <div>
-      <span>{`Completed ${todoDoneCount} of ${todoNotDoneCount}`}</span>
+      <span>{`Completed ${todoDoneCount} of ${data?.length}`}</span>
     </div>
   );
 };
