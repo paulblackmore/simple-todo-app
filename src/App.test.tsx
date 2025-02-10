@@ -27,7 +27,9 @@ describe('App component', () => {
         <App />
       </AllTheProviders>
     );
-    expect(screen.queryByText('Loading...')).not.toBeInTheDocument();
+    expect(
+      screen.queryByText('Your todos are loading...')
+    ).not.toBeInTheDocument();
   });
 
   it('renders App with loading state', () => {
